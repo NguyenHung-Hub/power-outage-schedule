@@ -8,7 +8,7 @@ app.use(express.json());
 
 function main() {
     log("Cronjob running");
-    cron.schedule("0 0 15 * *", runTask);
+    cron.schedule("0 10 15 * *", runTask);
 }
 
 app.get("/email/send", async (req, res) => {
